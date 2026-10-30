@@ -1,0 +1,92 @@
+[
+ {
+  "title": "Boxy tee",
+  "designer": "Test House",
+  "price_eur": 120,
+  "subcategory": "tshirts",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/7000001-smoke-fixture",
+  "images": []
+ },
+ {
+  "title": "Raf Simons hoodie",
+  "designer": "Test House",
+  "price_eur": 90,
+  "subcategory": "hoodies",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/7000002-smoke-fixture",
+  "images": []
+ },
+ {
+  "title": "Another tee",
+  "designer": "Test House",
+  "price_eur": 20,
+  "subcategory": "tshirts",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/7000003-smoke-fixture",
+  "images": []
+ },
+ {
+  "title": "Cargo pants",
+  "designer": "Test House",
+  "price_eur": 50,
+  "subcategory": "trousers",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/7000004-smoke-fixture",
+  "images": []
+ },
+ {
+  "title": "Leather pants",
+  "designer": "Test House",
+  "price_eur": 400,
+  "subcategory": "trousers",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/7000005-smoke-fixture",
+  "images": []
+ },
+ {
+  "title": "Wide cargo trousers",
+  "designer": "Test House",
+  "price_eur": 50,
+  "subcategory": "trousers",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/7000006-smoke-fixture",
+  "images": []
+ },
+ {
+  "title": "Late jeans",
+  "designer": "Test House",
+  "price_eur": 10,
+  "subcategory": "denim",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/7000007-smoke-fixture",
+  "images": []
+ },
+ {
+  "title": "Zip boots",
+  "designer": "Test House",
+  "price_eur": 60,
+  "subcategory": "boots",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/7000008-smoke-fixture",
+  "images": []
+ },
+ {
+  "title": "Leather tote bag",
+  "designer": "Test House",
+  "price_eur": 40,
+  "subcategory": "bags",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/7000009-smoke-fixture",
+  "images": []
+ }
+]

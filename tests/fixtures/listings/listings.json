@@ -1,0 +1,199 @@
+[
+ {
+  "title": "Boxy heavyweight tee",
+  "designer": "Test House A",
+  "price_eur": 40,
+  "subcategory": "tshirts",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/9100001-test-fixture",
+  "seller": "fixture_seller",
+  "images": [
+   {
+    "url": "__HOST__/img/9100001-cover.jpg",
+    "width": 1200,
+    "height": 1600
+   },
+   {
+    "url": "__HOST__/img/9100001-back.jpg",
+    "width": 1200,
+    "height": 1600
+   },
+   {
+    "url": "__HOST__/img/9100001-tag.jpg",
+    "width": 800,
+    "height": 800
+   }
+  ]
+ },
+ {
+  "title": "Mohair crew knit",
+  "designer": "Test House B",
+  "price_eur": 45,
+  "subcategory": "knitwear",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/9100002-test-fixture",
+  "seller": "fixture_seller",
+  "images": [
+   {
+    "url": "__HOST__/img/9100002-thumb.jpg",
+    "width": 150,
+    "height": 200
+   },
+   {
+    "url": "__HOST__/img/9100002-full.jpg",
+    "width": 1200,
+    "height": 1500
+   },
+   {
+    "url": "__HOST__/img/9100002-detail.jpg",
+    "width": 1200,
+    "height": 900
+   }
+  ]
+ },
+ {
+  "title": "Wide cargo trousers",
+  "designer": "Test House C",
+  "price_eur": 50,
+  "subcategory": "trousers",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/9100003-test-fixture",
+  "seller": "fixture_seller",
+  "images": [
+   {
+    "url": "__HOST__/img/9100003-avatar.jpg",
+    "width": 800,
+    "height": 800,
+    "kind": "avatar"
+   },
+   {
+    "url": "__HOST__/img/9100003-front.jpg",
+    "width": 1000,
+    "height": 1333
+   },
+   {
+    "url": "__HOST__/img/9100003-pocket.jpg",
+    "width": 1000,
+    "height": 1333
+   }
+  ]
+ },
+ {
+  "title": "Washed straight denim",
+  "designer": "Test House D",
+  "price_eur": 55,
+  "subcategory": "denim",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/9100004-test-fixture",
+  "seller": "fixture_seller",
+  "images": [
+   {
+    "url": "__HOST__/img/9100004-banner.jpg"
+   },
+   {
+    "url": "__HOST__/img/9100004-main.jpg"
+   },
+   {
+    "url": "__HOST__/img/9100004-hem.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Square-toe zip boots",
+  "designer": "Test House E",
+  "price_eur": 60,
+  "subcategory": "boots",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/9100005-test-fixture",
+  "seller": "fixture_seller",
+  "images": [
+   {
+    "url": "__HOST__/img/9100005-side.jpg",
+    "width": 1400,
+    "height": 1400
+   },
+   {
+    "url": "__HOST__/img/9100005-sole.jpg",
+    "width": 1400,
+    "height": 1400
+   }
+  ]
+ },
+ {
+  "title": "Leather court sneakers",
+  "designer": "Test House F",
+  "price_eur": 45,
+  "subcategory": "sneakers",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/9100006-test-fixture",
+  "seller": "fixture_seller",
+  "images": [
+   {
+    "url": "__HOST__/img/9100006-pair.jpg",
+    "width": 1600,
+    "height": 1200
+   },
+   {
+    "url": "__HOST__/img/9100006-heel.jpg",
+    "width": 800,
+    "height": 800
+   }
+  ]
+ },
+ {
+  "title": "Leather tote bag",
+  "designer": "Test House G",
+  "price_eur": 70,
+  "subcategory": "bags",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/9100007-test-fixture",
+  "seller": "fixture_seller",
+  "images": [
+   {
+    "url": "__HOST__/img/9100007-front.jpg",
+    "width": 1200,
+    "height": 1600
+   },
+   {
+    "url": "__HOST__/img/9100007-lining.jpg",
+    "width": 1200,
+    "height": 1600
+   },
+   {
+    "url": "__HOST__/img/9100007-logo.jpg",
+    "width": 600,
+    "height": 600,
+    "kind": "logo"
+   }
+  ]
+ },
+ {
+  "title": "Sterling cross pendant",
+  "designer": "Test House H",
+  "price_eur": 65,
+  "subcategory": "jewellery",
+  "size": "M",
+  "condition": "gently_used",
+  "listing_url": "https://www.grailed.com/listings/9100008-test-fixture",
+  "seller": "fixture_seller",
+  "images": [
+   {
+    "url": "__HOST__/img/9100008-onbody.jpg",
+    "width": 1000,
+    "height": 1500
+   },
+   {
+    "url": "__HOST__/img/9100008-flat.jpg",
+    "width": 1000,
+    "height": 1500
+   }
+  ]
+ }
+]

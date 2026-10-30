@@ -1,0 +1,6 @@
+[
+  { "id": 1, "title": "Fixture boots", "designer": "Fixture House", "price_eur": 420, "subcategory": "boots", "size": "43", "condition": "gently_used", "color": "black", "image_url": "https://example.com/a.jpg", "listing_url": "https://www.grailed.com/listings/1000001-fixture-boots", "seller": "seller_a", "sold": false },
+  { "id": 2, "title": "Fixture sold tee", "designer": "Fixture House", "price_eur": 80, "subcategory": "tshirts", "listing_url": "https://www.grailed.com/listings/1000002", "sold": true },
+  { "id": 3, "title": "No valid URL", "price_eur": 50, "subcategory": "tshirts", "listing_url": "https://example.com/x" },
+  { "id": 4, "title": "Unknown category", "price_eur": 50, "listing_url": "https://www.grailed.com/listings/1000004" }
+]
