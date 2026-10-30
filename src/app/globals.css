@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* Overridable per streamer (see lib/brand.ts) */
+:root { --brand-p1: #6B3BFF; --brand-p2: #2E5CFF; }
+
+@theme {
+  --color-pearl: #F5F4F9;
+  --color-mist: #ECEAF4;
+  --color-silver: #D9D7E3;
+  --color-ink: #0E0D16;
+  --color-mute: #5E5B72;
+  --color-night: #12111C;
+  --color-night2: #1E1C2B;
+  --color-line: #0E0D1614;
+  --color-p1: var(--brand-p1);
+  --color-p2: var(--brand-p2);
+  --color-accent: var(--brand-p1);
+  --color-danger: #C62848;
+  --color-ok: #10855A;
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Unbounded Variable", "Geist Variable", ui-sans-serif, sans-serif;
+  --shadow-soft: 0 1px 2px #0e0d160a, 0 8px 24px -8px #2a1f6a1f;
+  --shadow-lift: 0 2px 4px #0e0d160d, 0 22px 48px -16px #2a1f6a40;
+}
+
+:root { color-scheme: light; }
+html { background: var(--color-pearl); color: var(--color-ink); -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-sans); line-height: 1.5; min-height: 100dvh;
+  background:
+    radial-gradient(1200px 600px at 0% -10%, #e6defd 0%, transparent 60%),
+    radial-gradient(900px 600px at 100% 0%, #dde6ff 0%, transparent 55%),
+    var(--color-pearl);
+  background-attachment: fixed;
+}
+::selection { background: color-mix(in srgb, var(--brand-p1) 25%, white); }
+
+.font-display { font-family: var(--font-display); }
+.display { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.035em; line-height: .95; }
+.eyebrow { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--color-mute); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* Surfaces */
+.glass { background: color-mix(in srgb, white 72%, transparent); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  box-shadow: inset 0 1px 0 #ffffffcc, var(--shadow-soft); border-radius: 20px; }
+.card { background: white; border-radius: 20px; box-shadow: var(--shadow-soft); }
+.night { background: linear-gradient(160deg, var(--color-night2), var(--color-night)); color: white; }
+/* Needs a positioned element: add `relative` (or sticky/absolute). Setting position here would
+   override Tailwind utilities like `sticky`, because unlayered CSS beats @layer utilities. */
+.chrome-edge::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; pointer-events: none;
+  background: linear-gradient(140deg, #ffffff, #cfcbe0 40%, #ffffff 60%, #bdb8d6);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+
+/* Buttons: rectangles with soft radius, not pills */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 44px; padding: 0 1.1rem; border-radius: 12px;
+  font-weight: 600; font-size: .9375rem; transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease; white-space: nowrap; }
+.btn:active { transform: translateY(1px); }
+.btn-dark { background: var(--color-night); color: white; box-shadow: 0 6px 18px -8px #12111c99; }
+.btn-dark:hover { background: #000; box-shadow: 0 10px 26px -10px color-mix(in srgb, var(--brand-p1) 70%, black); }
+.btn-accent { background: var(--brand-p1); color: white; box-shadow: 0 8px 24px -10px color-mix(in srgb, var(--brand-p1) 80%, transparent); }
+.btn-accent:hover { filter: brightness(1.08); }
+.btn-quiet { background: color-mix(in srgb, white 70%, transparent); color: var(--color-ink); box-shadow: inset 0 0 0 1px var(--color-line); }
+.btn-quiet:hover { background: white; box-shadow: inset 0 0 0 1px #0e0d1626, var(--shadow-soft); }
+.btn:disabled { opacity: .4; cursor: not-allowed; transform: none; filter: none; }
+.link { font-weight: 600; text-decoration: underline; text-decoration-color: #0e0d1640; text-underline-offset: 4px; }
+.link:hover { text-decoration-color: currentColor; }
+
+.field { width: 100%; min-height: 48px; background: white; border-radius: 12px; padding: .6rem .9rem; color: var(--color-ink); font-size: 1rem;
+  box-shadow: inset 0 0 0 1px var(--color-line), 0 1px 2px #0e0d160a; transition: box-shadow .15s; }
+.field:focus { outline: none; box-shadow: inset 0 0 0 2px var(--brand-p1), 0 0 0 4px color-mix(in srgb, var(--brand-p1) 15%, transparent); }
+.field::placeholder { color: #8f8ca3; }
+select.field { appearance: none; padding-right: 2.2rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%235E5B72' stroke-width='1.6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right .9rem center; }
+.label { display: block; font-size: .8125rem; font-weight: 600; color: var(--color-mute); margin-bottom: .375rem; }
+
+/* Segmented control: one container, not a row of pills */
+.seg { display: inline-flex; padding: 4px; gap: 2px; border-radius: 14px; background: var(--color-mist); box-shadow: inset 0 1px 2px #0e0d1610; max-width: 100%; overflow-x: auto; }
+.seg > * { min-height: 38px; padding: 0 .9rem; border-radius: 10px; font-size: .875rem; font-weight: 600; color: var(--color-mute); transition: all .15s; white-space: nowrap; display: inline-flex; align-items: center; }
+.seg > *:hover { color: var(--color-ink); }
+.seg > [aria-selected="true"], .seg > [aria-pressed="true"], .seg > [data-on="true"] { background: white; color: var(--color-ink); box-shadow: var(--shadow-soft); }
+
+/* Choice cards for battle setup */
+.choice { position: relative; display: block; }
+.choice input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.choice > span { display: flex; flex-direction: column; justify-content: center; min-height: 48px; padding: .65rem 1rem; border-radius: 14px; background: white;
+  box-shadow: inset 0 0 0 1px var(--color-line); font-weight: 600; transition: all .15s; }
+.choice:hover > span { box-shadow: inset 0 0 0 1px #0e0d1633, var(--shadow-soft); }
+.choice input:checked + span { box-shadow: inset 0 0 0 2px var(--brand-p1), 0 8px 20px -12px color-mix(in srgb, var(--brand-p1) 70%, transparent); }
+.choice input:focus-visible + span { outline: 3px solid color-mix(in srgb, var(--brand-p1) 45%, transparent); outline-offset: 2px; }
+
+:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand-p1) 55%, transparent); outline-offset: 2px; border-radius: 6px; }
+
+/* Motion: restrained */
+@keyframes rise { from { transform: translateY(16px); opacity: 0 } to { transform: none; opacity: 1 } }
+.rise { animation: rise .6s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes pop-in { 0% { transform: scale(.94); opacity: 0 } 100% { transform: none; opacity: 1 } }
+.pop-in { animation: pop-in .35s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes shimmer { 0% { background-position: -400px 0 } 100% { background-position: 400px 0 } }
+.skeleton { background: linear-gradient(90deg, var(--color-mist) 0, #f8f7fc 40%, var(--color-mist) 80%); background-size: 800px 100%; animation: shimmer 1.4s linear infinite; }
+@keyframes glow { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--glow, var(--brand-p1)) 0%, transparent), var(--shadow-soft) }
+  50% { box-shadow: 0 0 0 6px color-mix(in srgb, var(--glow, var(--brand-p1)) 18%, transparent), var(--shadow-soft) } }
+.on-clock { animation: glow 2.4s ease-in-out infinite; }
+@keyframes urgent { 0%, 100% { color: white } 50% { color: #ff7d95 } }
+.urgent { animation: urgent 1s steps(2) infinite; }
+.lift { transition: transform .25s cubic-bezier(.2,.7,.2,1), box-shadow .25s; }
+.lift:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
